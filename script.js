@@ -110,10 +110,13 @@ const start = () => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
-    if (count == 0) {
+    if (count === 0) {
+      // clear the countdown overlay
+      countdownOverlay.style.display = "none";
+
+
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "flex";
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
