@@ -67,7 +67,7 @@ body {
 #result {
   position: fixed;
   top: 35%; 
-  left: 38%;
+  left: 36%;
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -193,7 +193,7 @@ button {
   }
 }
 
-/* @media only screen and (min-width: 701px) and (max-width:3000px) {
+@media only screen and (min-width: 701px) and (max-width:3000px) {
   .card {
     flex-direction: column;
     display: grid;
@@ -201,8 +201,8 @@ button {
   }
   #histories {
     display: grid;
-    grid-template-rows: repeat(1, fr);
-    grid-template-columns: 4;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    text-align: center;
   }
-} */
+}
