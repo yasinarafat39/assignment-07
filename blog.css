@@ -1,0 +1,42 @@
+body {
+    background-image: url("./bg.png");
+    background-size: cover;
+    font-family: "Zilla Slab", serif;
+    color: white;
+}
+
+#heading {
+    text-align: center;
+}
+
+#blog-main {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.card {
+    /* width: 100%;
+    height: 100%; */
+    padding: 50px;
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    padding: 20px 30px;
+    color: white;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(92.49deg,
+            rgba(255, 255, 255, 0.1) 0.18%,
+            rgba(255, 255, 255, 0.05) 99.85%);
+    backdrop-filter: blur(5px);
+    margin-bottom: 30px;
+}
+
+
+@media only screen and (min-width: 701px) and (max-width:3000px) {
+    .card-Container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
